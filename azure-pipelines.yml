@@ -31,7 +31,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'SST-Test'
+    azureSubscription: 'Azure subscription 1'
     appName: 'basic-node-app'
     package: '$(System.DefaultWorkingDirectory)'
     customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
